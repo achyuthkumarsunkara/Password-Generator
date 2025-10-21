@@ -1,9 +1,3 @@
-"""
-Password candidate generator from personal info.
-WARNING: Using personal-info-based passwords is weak for real accounts.
-Prefer long random passwords or passphrases and a password manager.
-"""
-
 import itertools
 import random
 import re
@@ -410,4 +404,5 @@ if __name__ == "__main__":
                 total = sum(len(passwords) for passwords in strength_categories.values())
                 print(f"All {total} passwords saved to {filename} organized by strength")
     
+
     print("\nDone!")
